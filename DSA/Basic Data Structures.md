@@ -67,6 +67,8 @@ In Python, a set is initialized using set() or {}. For example, {1, 2, 3} is a s
 - Creating a set from a list: O(n)
 - Length of a set: O(n)
 
+Note that there is no way to access elements using indexing in a set.
+
 Here is a code snippet showing how to use the various set operations in Python:
 
 ```Python
@@ -90,4 +92,57 @@ print(4 in numbers) # False
 # Removing an element
 numbers.remove(2)
 len(numbers) # 2
+```
+
+**Dictionary**
+
+A dictionary can be seen as a generalization of a list. In a list, we access elements using their index 0, 1, ... In a dictionary, we access elements using a key. Note that the key in a dictionary has to be immutable. It is initialized using {}. Here are the operations:
+
+- Accessing: O(1)
+- Inserting: O(1)
+- Modifying: O(1)
+- Delete: O(1)
+- Existence of key: O(1)
+- Existence of value: O(n)
+- Size: O(1)
+
+Here is a code snippet showing how to use a dictionary:
+
+```Python
+dict = {"a": 1, "b": 2}
+
+# Accessing
+print(dict["a"]) # 1
+
+# Inserting
+dict["c"] = 3
+
+# Modifying
+dict["c"] = 4
+
+# Deleting
+del d["c"]
+
+# Existence of key
+print("a" in dict) # True
+print("c" in dict) # False
+
+# Existence of value
+print(1 in d.values()) # True
+
+# Size
+len(dict) # 3
+```
+
+To iterate/run a loop over the elements of a dictionary, we can either loop over the keys, the values, or the key-value pairs. For example:
+
+```Python
+for key in dict:
+	print(key)
+
+for value in dict.values():
+	print(value)
+
+for k, v in d.items():
+	print(f"{k}:{v}")
 ```
