@@ -15,6 +15,8 @@ In Python, a list is simply initialized using \[]. For example, \[1, 2, 3, 4] wo
 - Slicing: O(n)
 - Concatenation: O(n)
 
+One thing to keep in mind about lists in Python is that they are mutable. If you pass a list to a function and the function mutates it, the original list will be changed. If we don't want to mutate it, we have to create a copy first.
+
 Here is a code snippet illustrating how to use the above operations in Python:
 
 ```Python
@@ -53,4 +55,39 @@ numbers[1:4] # Returns [2, 3, 4]
 # Concatenation
 numbers_2 = [6, 7, 8, 9, 10]
 numbers_1 += numbers_2 # Returns [1 to 10]
+```
+
+**Set**
+
+In Python, a set is initialized using set() or {}. For example, {1, 2, 3} is a set. Here are the common operations:
+
+- Adding an element: O(1)
+- Removing an element: O(1)
+- Searching for an element: O(1)
+- Creating a set from a list: O(n)
+- Length of a set: O(n)
+
+Here is a code snippet showing how to use the various set operations in Python:
+
+```Python
+numbers = set()
+
+# Adding elements
+numbers.add(1)
+numbers.add(2)
+numbers.add(3)
+
+print(numbers) # {1, 2, 3}
+
+# Converting from list to set
+numbers_2 = set([1, 2, 3])
+print(numbers_2) # {1, 2, 3}
+
+# Searching for an element
+print(3 in numbers) # True
+print(4 in numbers) # False
+
+# Removing an element
+numbers.remove(2)
+len(numbers) # 2
 ```
