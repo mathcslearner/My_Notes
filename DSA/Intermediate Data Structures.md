@@ -65,3 +65,35 @@ d.popleft() # remove from the front
 front = d[0] # look at front
 back = d[-1] # look at back
 ```
+
+**Heap**
+
+A heap is a data structure which allows efficient access to either the minimum or the maximum element. The top element refers to the min/max. Here are the operations:
+
+- Insert element into heap(push): O(log n)
+- Removing the top element(pop): O(log n)
+- Viewing the root element (peek): O(1)
+- Build heap from list(heapify): O(n)
+
+By default, the heap in python is a minimum heap. To use a maximum heap, just insert the negative of elements. Here is an example of a heap in use in Python:
+
+```Python
+import heapq
+
+heap = []
+
+# Insert
+heapq.heappush(heap, 1)
+heapq.heappush(heap, 3)
+
+# Peek
+smallest = heap[0]
+
+# Extract minimum
+smallest = heapq.heappop(heap)
+
+# Heapify
+arr = [1, 2, 3, 4]
+heapq.heapify(arr)
+```
+
