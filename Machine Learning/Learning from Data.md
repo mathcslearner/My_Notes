@@ -1,4 +1,4 @@
-# Raschka Chap 1: Learning from Data
+# Learning from Data
 
 Machine learning is all about developing algorithms which can make sense of the vast amount of data that we possess to make predictions. Examples of applications include spam filters, voice recognition software, medical applications, computer vision systems, etc.
 
