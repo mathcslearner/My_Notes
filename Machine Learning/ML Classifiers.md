@@ -1,4 +1,4 @@
-# Raschka Chap 3: ML Classifiers
+# ML Classifiers
 
 For each particular problem, some classification algorithm might work better than others based on their assumptions. The performance of the classifier depends heavily on what the data looks like. Here are the five main steps:
 
