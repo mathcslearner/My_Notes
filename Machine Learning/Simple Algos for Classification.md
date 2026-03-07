@@ -1,4 +1,4 @@
-# Raschka Chap 2: Simple Algos for Classification
+# Simple Algos for Classification
 
 **Artificial Neurons**
 
