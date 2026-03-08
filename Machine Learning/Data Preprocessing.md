@@ -1,3 +1,5 @@
+# Data Preprocessing
+
 Before training a machine learning model, it's important to examine and preprocess the dataset. Here are 3 components to preprocessing:
 
 - Removing and imputing missing values from the dataset
