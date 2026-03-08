@@ -1,3 +1,5 @@
+# Dimensionality Reduction
+
 We can often summarize the information in a dataset by transforming it onto a new feature subspace of lower dimensionality. This is known as data compression and is very useful to save money and time. Here are the three main ones covered:
 
 - Unsupervised data compression using PCA (principal component analysis)
